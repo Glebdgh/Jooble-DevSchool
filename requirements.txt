@@ -1,0 +1,9 @@
+pip3==20.1.1
+
+Python3==3.8.10
+
+requests==2.14.2
+
+mysql-connector-python==8.0.26
+
+Flask==2.0.1
