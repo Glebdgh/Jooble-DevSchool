@@ -20,7 +20,7 @@ try:
             host="database-2.ccwhlpmaeyte.eu-central-1.rds.amazonaws.com",
             port="3306",
             user="admin",
-            password="15doramu15",
+            password="password",
         )
         mycursor = db.cursor()
         sqlBuff =  "use Disney;"
