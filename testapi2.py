@@ -20,12 +20,15 @@ try:
             host="database-2.ccwhlpmaeyte.eu-central-1.rds.amazonaws.com",
             port="3306",
             user="admin",
-            password="password",
+            password="15doramu15",
         )
         mycursor = db.cursor()
         sqlBuff =  "use Disney;"
         mycursor.execute(sqlBuff)
         db.commit()
+        mycursor.execute("select * from Disney")
+        for i in mycursor:
+               print(i)
 
         mycursor = db.cursor()
         sqlBuf =  "UPDATE Disney SET name = 'Alladin' where id = 7"
