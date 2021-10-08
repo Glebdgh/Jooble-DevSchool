@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>HTML PAGE</h1>
+
+<h2>Select query:</h2>
+<form action="{{ url_for('select_query') }}">
+  
+    <div class="form-group">
+        <label>ID:</label>
+        <input type="text" class="form-control" id="select_id" name="id" placeholder="Please, set item id">
+    </div>
+
+    <div class="form-group">
+        <label>Last records count:</label>
+        <input type="text" class="form-control" id="last_records_count" name="last_records_count" placeholder="Please, set last records item">
+    </div>
+    
+    <input type="submit" placeholder="Submit">
+</form>
+
+<h2>Insert query:</h2>
+<form action="{{ url_for('insert_query') }}">
+
+    <div class="form-group">
+        <label>birth</label>
+        <input type="text" class="form-control" id="birth" name="birth" placeholder="Please, set item birth">
+      </div>
+
+      <div class="form-group">
+        <label>name</label>
+        <input type="text" class="form-control" id="name" name="name" placeholder="Please, set item name">
+      </div>
+
+      <div class="form-group">
+        <label>species</label>
+        <input type="text" class="form-control" id="species" name="species" placeholder="Please, set item species">
+      </div>
+
+      <div class="form-group">
+        <label>role</label>
+        <input type="text" class="form-control" id="role" name="role" placeholder="Please, set item role">
+      </div>
+
+      <div class="form-group">
+        <label>sex</label>
+        <input type="text" class="form-control" id="sex" name="sex" placeholder="Please, set item sex">
+      </div>
+
+      <input type="submit" placeholder="Submit">
+</form>
+
+<h2>Update query:</h2>
+<form action="{{ url_for('update_query') }}">
+
+    <div class="form-group">
+        <label>ID</label>
+        <input type="text" class="form-control" id="id" name="id" placeholder="Please, set item id">
+      </div>
+
+      <div class="form-group">
+        <label>birth</label>
+        <input type="text" class="form-control" id="birth" name="birth" placeholder="Please, set item birth">
+      </div>
+        
+        <div class="form-group">
+        <label>name</label>
+        <input type="text" class="form-control" id="name" name="name" placeholder="Please, set item name">
+      </div>
+
+      <div class="form-group">
+        <label>species</label>
+        <input type="text" class="form-control" id="species" name="species" placeholder="Please, set item species">
+      </div>
+
+      <div class="form-group">
+        <label>role</label>
+        <input type="text" class="form-control" id="role" name="role" placeholder="Please, set item role">
+      </div>
+
+      <div class="form-group">
+        <label>sex</label>
+        <input type="text" class="form-control" id="sex" name="sex" placeholder="Please, set item sex">
+      </div>
+
+      <input type="submit" placeholder="Submit">
+</form>
+
+<h2>Delete query:</h2>
+<form action="{{ url_for('delete_query') }}">
+  
+  <div class="form-group">
+    <label>ID</label>
+    <input type="text" class="form-control" id="id" name="id" placeholder="Please, set item id">
+  </div>
+
+  <input type="submit" placeholder="Submit">
+</form>
+
+</body>
+</html>
